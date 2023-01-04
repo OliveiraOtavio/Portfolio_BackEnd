@@ -1,41 +1,31 @@
 
-package com.portfolio.Portfolio_Otavio_Oiveira.Entity;
+package com.portfolio.Portfolio_Otavio_Oiveira.Dto;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.validation.constraints.NotBlank;
 
-@Entity
-public class Experiencia {
+
+public class dtoEducacion {
     
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    @NotBlank
     private String nombreE;
+    @NotBlank
     private String descripcionE;
+    @NotBlank
     private String conclusionE;
     
-    // Constructores
+    
+    // Constructor
 
-    public Experiencia() {
+    public dtoEducacion() {
     }
 
-    public Experiencia(String nombreE, String descripcionE, String conclusionE) {
+    public dtoEducacion(String nombreE, String descripcionE, String conclusionE) {
         this.nombreE = nombreE;
         this.descripcionE = descripcionE;
         this.conclusionE = conclusionE;
     }
     
     // Getters and Setters
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public String getNombreE() {
         return nombreE;
@@ -53,11 +43,11 @@ public class Experiencia {
         this.descripcionE = descripcionE;
     }
     
-     public String getConclusionE() {
+    public String getConclusionE () {
         return conclusionE;
     }
-
-    public void setConclusionE(String conclusionE) {
+    
+    public void setConclusionE (String conclusionE) {
         this.conclusionE = conclusionE;
     }
     
