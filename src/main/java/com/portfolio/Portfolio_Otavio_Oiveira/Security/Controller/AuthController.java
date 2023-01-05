@@ -32,7 +32,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/auth")
-@CrossOrigin
+@CrossOrigin (origins ="https://frontend-portfolio-otavio.web.app")
 public class AuthController {
 
     @Autowired
