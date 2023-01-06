@@ -1,5 +1,6 @@
+FROM alpine:3.16
 
-FROM amazoncorreto:19-alpine-jdk
+ARG version=19.0.1.10.1
 
 MAINTAINER otavio_oliveira
 
