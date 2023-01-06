@@ -1,6 +1,8 @@
 
-FROM amazoncorreto:8-alpine-jdk
+FROM amazoncorreto:19-alpine-jdk
 
-COPY target/Portfolio_Otavio_Oiveira-0.0.1-SNAPSHOT.jar app.jar
+MAINTAINER otavio_oliveira
 
-ENTRYPOINT ["java", "-jar", "/app.jar"]
+COPY target/Portfolio_Otavio_Oiveira-0.0.1-SNAPSHOT.jar Portfolio_Otavio_Oiveira-0.0.1-SNAPSHOT.jar 
+
+ENTRYPOINT ["java","-jar","/Portfolio_Otavio_Oiveira-0.0.1-SNAPSHOT.jar "]
