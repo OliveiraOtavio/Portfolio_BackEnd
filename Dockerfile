@@ -22,6 +22,6 @@ ENV PATH=$PATH:/usr/lib/jvm/default-jvm/bin
 
 MAINTAINER otavio_oliveira
 
-COPY target/Portfolio_Otavio_Oiveira-0.0.1-SNAPSHOT.jar Portfolio_Otavio_Oiveira-0.0.1-SNAPSHOT.jar 
+COPY target/Portfolio_Otavio_Oiveira-0.0.1-SNAPSHOT.jar app.jar 
 
-ENTRYPOINT ["java","-jar","/Portfolio_Otavio_Oiveira-0.0.1-SNAPSHOT.jar "]
+ENTRYPOINT ["java","-jar","/app.jar"]
